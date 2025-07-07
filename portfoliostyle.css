@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'altehaasgrotesk';
+    src: url('AlteHaasGroteskBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'edpiedmont';
+    src: url('ED Piedmont-Regular.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'altehaasgrotesk', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navigation Bar */
+.navigation {
+    width: 100%;
+    background-color: #f47896;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px; /* More padding */
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f47896;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Page Layout */
+.container {
+    margin-top: -50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.basket, .intro, .icon {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.intro {
+    position: absolute;
+    right: 290px;
+    max-width: 37%;
+}
+
+.icon {
+    position: absolute;
+    left: 280px;
+    max-width: 37%;
+}
