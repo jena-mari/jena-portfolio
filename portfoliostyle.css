@@ -82,7 +82,7 @@
 
 .basket {
   animation: pop-in 0.5s ease-in-out;
-  max-height: 120%;
+  max-height: 100%;
 }
 
 /* Animate in + allow smooth transitions out */
@@ -111,7 +111,7 @@
 /* Icon drop-in effect */
 .icon {
   position: absolute;
-  right: 10px;
+  right: 380px;
   max-width: 45%;
   cursor: pointer;
   opacity: 1;
