@@ -111,8 +111,8 @@
 /* Icon drop-in effect */
 .icon {
   position: absolute;
-  right: 800px;
-  max-width: 35%;
+  right: 780px;
+  max-width: 30%;
   cursor: pointer;
   opacity: 1;
   transform: translateY(0);
