@@ -112,7 +112,7 @@
 .icon {
   position: absolute;
   right: 800px;
-  max-width: 20%;
+  max-width: 35%;
   cursor: pointer;
   opacity: 1;
   transform: translateY(0);
