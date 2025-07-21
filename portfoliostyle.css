@@ -88,7 +88,7 @@
 /* Animate in + allow smooth transitions out */
 .intro {
   position: absolute;
-  right: 200px;
+  right: 250px;
   max-width: 45%;
   cursor: pointer;
   opacity: 1;
@@ -111,7 +111,7 @@
 /* Icon drop-in effect */
 .icon {
   position: absolute;
-  right: 610px;
+  right: 800px;
   max-width: 20%;
   cursor: pointer;
   opacity: 1;
