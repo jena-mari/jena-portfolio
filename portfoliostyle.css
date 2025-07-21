@@ -89,7 +89,7 @@
 .intro {
   position: absolute;
   right: 0.01px;
-  max-width: 80%;
+  max-width: 70%;
   cursor: pointer;
   opacity: 1;
   transform: translateY(0);
@@ -112,7 +112,7 @@
 .icon {
   position: absolute;
   left: 8px;
-  max-width: 55%;
+  max-width: 45%;
   cursor: pointer;
   opacity: 1;
   transform: translateY(0);
