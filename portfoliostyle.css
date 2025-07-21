@@ -1,100 +1,155 @@
+/* ========== Fonts ========== */
 @font-face {
-    font-family: 'altehaasgrotesk';
-    src: url('AlteHaasGroteskBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'altehaasgrotesk';
+  src: url('AlteHaasGroteskBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'edpiedmont';
-    src: url('ED Piedmont-Regular.woff') format('woff'); 
-    font-weight: normal; 
-    font-style: normal;
+  font-family: 'edpiedmont';
+  src: url('ED Piedmont-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* Global Reset */
+/* ========== Reset ========== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'altehaasgrotesk', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'altehaasgrotesk', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Navigation Bar */
+/* ========== Navigation ========== */
 .navigation {
-    width: 100%;
-    background-color: #f47896;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: #f47896;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo Section */
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
 }
 
-/* Navigation Links */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links li {
-    list-style: none;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 10px 20px; /* More padding */
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-links li a:hover {
-    color: #f47896;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #f47896;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Home Page Layout */
+/* ========== Layout ========== */
 .container {
-    margin-top: -50px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 40px;
-    overflow: hidden;
+  margin-top: -50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 40px;
+  overflow: hidden;
 }
 
-.basket, .intro, .icon {
-    max-height: 100%;
+/* ========== Animated Elements ========== */
+
+.basket {
+  animation: pop-in 0.5s ease-in-out;
+  max-height: 100%;
 }
 
+/* Animate in + allow smooth transitions out */
 .intro {
-    position: absolute;
-    right: 300px;
-    max-width: 80%;
+  position: absolute;
+  right: 0.5px;
+  max-width: 70%;
+  cursor: pointer;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  animation: drop-in 0.5s ease-in-out;
 }
 
+/* Hover in effect */
+.intro:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* Hover on wrapper triggers fade/slide out */
+.intro-wrapper:hover .intro {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Icon drop-in effect */
 .icon {
-    position: absolute;
-    left: 280px;
-    max-width: 37%;
+  position: absolute;
+  left: 90px;
+  max-width: 50%;
+  cursor: pointer;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  animation: drop-in 0.5s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+.icon-wrapper:hover .icon {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+
+/* ========== Keyframes ========== */
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
