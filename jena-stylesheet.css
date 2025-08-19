@@ -90,7 +90,7 @@ ul{ list-style: none; padding: 0; margin: 0; }
   display: grid;
   align-items: end;
   padding-top: 1.5rem;
-  background: url('jena-background.png') center/cover no-repeat;
+  background: url('images/jena-background.png') center/cover no-repeat;
 }
 .hero::after{
   content: "";
@@ -102,13 +102,13 @@ ul{ list-style: none; padding: 0; margin: 0; }
 .navbar {
   position: absolute;
   top: 50px;
-  left: -50px;
+  left: 80px;
   width: 100%;
   z-index: 999; 
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 50rem;
+  gap: 55rem;
   padding: 0.3rem 1rem; 
 }
 
@@ -148,6 +148,7 @@ ul{ list-style: none; padding: 0; margin: 0; }
 
 .intro{
   position: relative;
+  left: 75px;
   z-index: 2;
   margin: clamp(2rem, 2rem, 4rem) 0 var(--pad-section);
   text-align: right;
@@ -282,6 +283,7 @@ ul{ list-style: none; padding: 0; margin: 0; }
   color: var(--ink);
   transform: translateY(30px);
   animation: introFadeIn 1.2s cubic-bezier(.23,1,.32,1) .2s forwards;
+  line-height: 0.8;
 }
 
 .project-card{
@@ -313,6 +315,7 @@ ul{ list-style: none; padding: 0; margin: 0; }
   margin: 0 0 .4rem 0;
   color: var(--red);
   text-transform: capitalize;
+  line-height: 1;
 }
 .project-content p{
   margin: .35rem 0;
@@ -335,17 +338,6 @@ ul{ list-style: none; padding: 0; margin: 0; }
   background: var(--red-bright);
   transform: translateY(-3px);
   box-shadow: 0 6px 14px rgba(0,0,0,.3);
-}
-
-/* ----------------------------------------
-   EXPERIENCE / CONTACT PLACEHOLDERS
----------------------------------------- */
-.site-footer{
-  padding: 2rem 0;
-  background: var(--black);
-  color: var(--cream);
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,.08);
 }
 
 /* ----------------------------------------
