@@ -4,7 +4,7 @@ Hi! I am Jenamari Bathan, a second-year Computer Science and Software Engineerin
 ## TECHNOLOGY STACK
 
 - **Frontend:**  
-  - HTML5, CSS3, JavaScript (ES6+)  
+  - HTML5, CSS3
   - UI/UX visuals designed with Canva
 
 - **Backend:**  
