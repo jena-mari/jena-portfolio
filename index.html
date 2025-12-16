@@ -1,239 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>jenamari bathan's portfolio ૮๑ˊ ꒳ ˋ๑ა</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jenamari Bathan's Portfolio ૮๑ˊ ꒳ ˋ๑ა</title>
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="jena-stylesheet.css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="jena-stylesheet.css" /> 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Dancing+Script:wght@400;700&family=DM+Serif+Display&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="icon" href="images/megaphone.png" type="image/website-icon">
+</head>
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <!-- SKIP LINK -->
-    <a class="skip-link" href="#main">Skip to content</a>
+<!-- ALERT MESSAGE -->
+  <div class="alert info-alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <div class="alert-content">
+      <strong>Info:</strong> This portfolio is a work in progress. More of my work will be uploaded soon!  
+      For more details about my work, feel free to reach out via the <a href="#contact">Contact</a> section.
+    </div>
+  </div>
 
-    <!-- HERO / HEADER -->
-    <header id="home" class="hero">
-      <div class="container">
-        <nav class="navbar" aria-label="Primary">
-          <a class="logo" href="#home" aria-label="Home">JB</a>
-          <ul class="nav-links">
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#experience">experience</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
-        </nav>
+  <!-- HERO SECTION -->
+  <header id="home" class="hero">
+    <!-- NAVBAR -->
+    <nav class="navbar" aria-label="Primary">
+      <div class="navbar-inner">
+        <a class="logo" href="#home" aria-label="Home">JB</a>
+        <ul class="nav-links">
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#experience">experience</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-        <div class="intro" role="banner">
-          <div class="hello-bubble" aria-hidden="true">hi, i am</div>
-          <h1 class="display">
-            <span>JENAMARI</span><br />
-            <span>BATHAN ✷</span>
-          </h1>
-          <p class="lede">
-            and i’m a software engineering student who thrives for creativity and artistry in the field of technology.
-            currently studying in the university of wollongong with a high distinction average.
-          </p>
+    <!-- HERO CONTENT -->
+    <div class="container">
+      <div class="intro" role="banner">
+        <div class="hello-bubble" aria-hidden="true">hi, i am</div>
+        <h1 class="display">
+          <span>JENAMARI</span><br />
+          <span>BATHAN ✷</span>
+        </h1>
+        <p class="lede">
+          and i’m a software engineering student who thrives for creativity and artistry
+          in the field of technology. currently studying in the university of wollongong
+          with a high distinction average.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main">
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container grid-2">
+        <div class="skills-left">
+          <h2 class="section-title">
+            SKILLS
+            <img src="images/megaphone.png" alt="Megaphone icon" class="icon-img" />
+          </h2>
+
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-pills">
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>C</span>
+              <span>Java</span>
+              <span>C++</span>
+              <span>C#</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Web Development</h3>
+            <div class="skill-pills">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Tailwind CSS</span>
+              <span>AJAX</span>
+              <span>XML</span>
+              <span>ReadyMag</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-right">
+          <img src="images/clip.png" alt="Paperclip icon" class="clip-img" /> 
+          <article class="skills-card" aria-labelledby="dev-tools">
+            <h3 id="dev-tools" class="card-heading">DEVELOPER TOOLS</h3>
+            <p>
+              Visual Studio Code, MySQL, ProjectLibre, UMLet, Replit, Github, Microsoft Excel, RapidMiner, R Studio
+            </p>
+
+            <h3 class="card-heading">ALGORITHMS AND DATA STRUCTURES</h3>
+            <p>
+              Depth-First Search (DFS), Breadth-First Search (BFS), Prim’s Algorithm, Kruskal’s Algorithm, Dijkstra’s Algorithm, Graphs
+            </p>
+          </article>
         </div>
       </div>
-    </header>
+    </section>
 
-    <!-- MAIN CONTENT -->
-    <main id="main">
-      <!-- SKILLS -->
-      <section id="skills" class="section section--dark skills-section">
-        <div class="container grid-2">
-          <div class="skills-left">
-            <h2 class="section-title">
-              SKILLS
-              <img src="images/megaphone.png" alt="" class="icon-img" />
-            </h2>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="projects-title">
+          Projects<br>and Works
+        </h2>
 
-            <div class="skill-category">
-              <h3>Programming Languages</h3>
-              <div class="skill-pills">
-                <span>Python</span><span>JavaScript</span><span>C</span
-                ><span>Java</span><span>C++</span><span>C#</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h3>Web Development</h3>
-              <div class="skill-pills">
-                <span>HTML</span><span>CSS</span><span>AJAX</span
-                ><span>XML</span><span>ReadyMag</span>
-              </div>
+        <!-- Project Card: Cafe Pomodoro -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/cafe-pomodoro.png" alt="Cafe Pomodoro App" />
+          </div>
+          <div class="project-content">
+            <h3>CAFE POMODORO</h3>
+            <p>✮ A customizable Pomodoro timer paired with a built-in to-do list.</p>
+            <p>✮ Made with HTML, CSS, JavaScript</p>
+            <p>✮ Tags: Web Development, UI/UX Design, JavaScript Programming</p>
+            <div class="project-links">
+              <a href="https://github.com/jena-mari/cafe-pomodoro" target="_blank" rel="noopener" aria-label="View source code for Cafe Pomodoro">
+                <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">Code</span>
+              </a>
+              <a href="https://cafe-pomodoro.vercel.app/" target="_blank" rel="noopener" aria-label="Open live demo of Cafe Pomodoro">
+                <i class="fa-solid fa-globe" aria-hidden="true"></i><span class="sr-only">Live</span>
+              </a>
             </div>
           </div>
+        </article>
 
-          <div class="skills-right">
-            <img src="images/clip.png" alt="" class="clip-img" />
-            <article class="skills-card" aria-labelledby="dev-tools">
-              <h3 id="dev-tools" class="card-heading">DEVELOPER TOOLS</h3>
-              <p>
-                Visual Studio Code, MySQL, ProjectLibre, UMLet, Replit, Github, Microsoft Excel, RapidMiner, R Studio
-              </p>
-
-              <h3 class="card-heading">ALGORITHMS AND DATA STRUCTURES</h3>
-              <p>
-                Depth-First Search (DFS), Breadth-First Search (BFS), Prim’s Algorithm, Kruskal’s Algorithm, Dijkstra’s Algorithm, Graphs
-              </p>
-            </article>
+        <!-- Project Card: FlyDreamAir -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/flydreamair.png" alt="FlyDreamAir" />
           </div>
-        </div>
-      </section>
+          <div class="project-content">
+            <h3>FLYDREAMAIR WEBSITE PROTOTYPE</h3>
+            <p>✮ Front-end developer and debugger of an airline website prototype.</p>
+            <p>✮ Made with HTML, CSS, JavaScript</p>
+            <p>✮ Tags: Web Development, UI/UX Design, JavaScript Programming, Database Development, Code Collaboration</p>
+            <div class="project-links">
+              <a href="https://github.com/elijaharc/fly-dream-air" target="_blank" rel="noopener" aria-label="View source code for FlyDreamAir">
+                <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">Code</span>
+              </a>
+              <a href="https://fly-dream-air-omega.vercel.app/" target="_blank" rel="noopener" aria-label="Open live demo of FlyDreamAir">
+                <i class="fa-solid fa-globe" aria-hidden="true"></i><span class="sr-only">Live</span>
+              </a>
+            </div>
+          </div>
+        </article>
 
-      <!-- PROJECTS -->
-      <section id="projects" class="section projects-section">
-        <div class="container">
-          <h2 class="projects-title"> 
-            Projects<br>and Works</h2>
+        <!-- Project Card: ScrapChef -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/scrapchef.png" alt="ScrapChef" />
+          </div>
+          <div class="project-content">
+            <h3>SCRAPCHEF APP</h3>
+            <p>✮ UI/UX Designer of ScrapChef, a prototype for a waste analysis application.</p>
+            <p>✮ Made using Figma.</p>
+            <p>✮ Tags: Human-Computer Interaction, UI/UX Design, Figma Design</p>
+            <div class="project-links">
+              <a href="https://docs.google.com/document/d/1s0CdVIa8nAQxFsARH7EdkjhLQZGa8w74gEkZZFI3HJA/edit?usp=sharing" target="_blank" rel="noopener" aria-label="View document for ScrapChef">
+                <i class="fa-solid fa-file-word" aria-hidden="true"></i><span class="sr-only">Document</span>
+              </a>
+              <a href="https://www.figma.com/proto/ZBZBahuY7Fp2z3CPmczLOg/ScrapChef-Hi-Fidelity?page-id=0%3A1&node-id=1-2&p=f&viewport=420%2C116%2C0.08&t=Al4FLD385Za60tAw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2" target="_blank" rel="noopener" aria-label="Figma Prototype for ScrapChef">
+                <i class="fa-brands fa-figma" aria-hidden="true"></i><span class="sr-only">Figma</span>
+              </a>
+              <a href="https://www.youtube.com/watch?v=64kdB31-huY" target="_blank" rel="noopener" aria-label="Video for ScrapChef">
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i><span class="sr-only">Video</span>
+              </a>
+            </div>
+          </div>
+        </article>
 
-          <!--CAFE POMODORO-->
-          <article class="project-card">
-            <div class="project-image">
-              <img src="images/cafe-pomodoro.png" alt="Cafe Pomodoro App" />
+        <!-- Project Card: RapidMiner -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/rapidminer.png" alt="RapidMiner Analysis" />
+          </div>
+          <div class="project-content">
+            <h3>ANALYSIS OF SALES DATA FOR FUTURE STRATEGIC IMPLEMENTATIONS</h3>
+            <p>✮ Implemented a Decision Tree Model in RapidMiner for sales, discount, and profit analysis.</p>
+            <p>✮ Made using RapidMiner and Microsoft Excel.</p>
+            <p>✮ Tags: Knowledge and Information Engineering, RapidMiner, Machine Learning, Predictive Analytics, Project Collaboration.</p>
+            <div class="project-links">
+              <a href="https://docs.google.com/document/d/1xMOsS9yl2q9qj-TjyMElchtwOrHyNdoW4XV4CQxeqxw/edit?tab=t.0#heading=h.59p2qab3bm3u" target="_blank" rel="noopener" aria-label="View document for RapidMiner">
+                <i class="fa-solid fa-file-word" aria-hidden="true"></i><span class="sr-only">Document</span>
+              </a>
             </div>
-            <div class="project-content">
-              <h3>CAFE POMODORO</h3>
-              <p>✮ A customizable Pomodoro timer paired with a built-in to-do list.</p>
-              <p>✮ Made with HTML, CSS, JavaScript</p>
-              <p>✮ Tags: Web Development, UI/UX Design, JavaScript Programming</p>
-              <div class="project-links">
-                <a href="https://github.com/jena-mari/cafe-pomodoro" target="_blank" rel="noopener" aria-label="View source code for Cafe Pomodoro">
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                  <span class="sr-only">Code</span>
-                </a>
-                <a href="https://cafe-pomodoro.vercel.app/" target="_blank" rel="noopener" aria-label="Open live demo of Cafe Pomodoro">
-                  <i class="fa-solid fa-globe" aria-hidden="true"></i>
-                  <span class="sr-only">Live</span>
-                </a>
-              </div>
-            </div>
-          </article>
+          </div>
+        </article>
+      </div>
+    </section>
 
-          <!--FLYDREAMAIR-->
-          <article class="project-card">
-            <div class="project-image">
-              <img src="images/flydreamair.png" alt="FlyDreamAir" />
-            </div>
-            <div class="project-content">
-              <h3>FLYDREAMAIR WEBSITE PROTOTYPE</h3>
-              <p>✮ Front-end developer and debugger of an airline website prototype.</p>
-              <p>✮ Made with HTML, CSS, JavaScript</p>
-              <p>✮ Tags: Web Development, UI/UX Design, JavaScript Programming, Database Development, Code Collaboration</p>
-              <div class="project-links">
-                <a href="https://github.com/elijaharc/fly-dream-air" target="_blank" rel="noopener" aria-label="View source code for FlyDreamAir">
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                  <span class="sr-only">Code</span>
-                </a>
-                <a href="https://fly-dream-air-omega.vercel.app/" target="_blank" rel="noopener" aria-label="Open live demo of FlyDreamAir">
-                  <i class="fa-solid fa-globe" aria-hidden="true"></i>
-                  <span class="sr-only">Live</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!--SCRAPCHEF-->
-          <article class="project-card">
-            <div class="project-image">
-              <img src="images/scrapchef.png" alt="ScrapChef" />
-            </div>
-            <div class="project-content">
-              <h3>SCRAPCHEF APP</h3>
-              <p>✮ UI/UX Designer of ScrapChef, a prototype for a waste analysis application.</p>
-              <p>✮ Made using Figma.</p>
-              <p>✮ Tags: Human-Computer Interaction, UI/UX Design, Figma Design</p>
-              <div class="project-links">
-                <a href="https://docs.google.com/document/d/1s0CdVIa8nAQxFsARH7EdkjhLQZGa8w74gEkZZFI3HJA/edit?usp=sharing" target="_blank" rel="noopener" aria-label="View document for ScrapChef">
-                  <i class="fa-solid fa-file-word" aria-hidden="true"></i>
-                  <span class="sr-only">Document</span>
-                </a>
-                <a href="https://www.figma.com/proto/ZBZBahuY7Fp2z3CPmczLOg/ScrapChef-Hi-Fidelity?page-id=0%3A1&node-id=1-2&p=f&viewport=420%2C116%2C0.08&t=Al4FLD385Za60tAw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2" target="_blank" rel="noopener" aria-label="Figma Prototype for ScrapChef">
-                  <i class="fa-brands fa-figma" aria-hidden="true"></i>
-                  <span class="sr-only">Figma</span>
-                </a>
-                <a href="https://www.youtube.com/watch?v=64kdB31-huY" target="_blank" rel="noopener" aria-label="Video for ScrapChef">
-                  <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-                  <span class="sr-only">Video</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!--RAPIDMINER-->
-          <article class="project-card">
-            <div class="project-image">
-              <img src="images/rapidminer.png" alt="ScrapChef" />
-            </div>
-            <div class="project-content">
-              <h3>ANALYSIS OF SALES DATA FOR FUTURE STRATEGIC IMPLEMENTATIONS</h3>
-              <p>✮ Implemented a Decision Tree Model in RapidMiner that did sales, discount, and profit analysis for a company.</p>
-              <p>✮ Made using RapidMiner and Microsoft Excel.</p>
-              <p>✮ Tags: Knowledge and Information Engineering, RapidMiner, Machine Learning, Predictive Analytics, Project Collaboration.</p>
-              <div class="project-links">
-                <a href="https://docs.google.com/document/d/1xMOsS9yl2q9qj-TjyMElchtwOrHyNdoW4XV4CQxeqxw/edit?tab=t.0#heading=h.59p2qab3bm3u" target="_blank" rel="noopener" aria-label="View document for RapidMiner">
-                  <i class="fa-solid fa-file-word" aria-hidden="true"></i>
-                  <span class="sr-only">Document</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- EXPERIENCE (STRUCTURE READY) -->
-    <section id="experience" class="section section--dark">
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
       <div class="container">
         <h2 class="section-title">EXPERIENCE</h2>
-        <p class="section-subtitle">This page is a work in progress.</p>
-        <p class="resume-download">
-          <a href="files/resume.docx" class="btn btn-primary" target="_blank" rel="noopener"><u>Download Resume Here</u></a>
+
+        <div class="experience-block">
+          <h3 class="title">Webacy Inc. Web3 Security Data Analytics Extern</h3>
+          <span class="date">Extern ⊹ June 2024 - July 2024</span>
+          <ul class="duties-list">
+            <li>Conducted detailed analysis and labelling of smart contract vulnerabilities, enhancing data categorization and risk assessment skills.</li>
+            <li>Validated peers' data labels to ensure the accuracy and reliability of data sets.</li>
+            <li>Performed frequency and correlation analysis of risk tags to identify the most prevalent vulnerabilities and their associations.</li>
+            <li>Utilised unsupervised machine learning techniques for cluster analysis, discovering patterns and commonalities among smart contracts.</li>
+            <li>Demonstrated proficiency in Excel, Google Colab, and Python for complex data analysis and visualisation tasks.</li>
+          </ul>
+        </div>
+
+        <div class="experience-block">
+          <h3 class="title">Student Ambassador</h3>
+          <span class="date">Extern ⊹ July 2024 - January 2025</span>
+          <ul class="duties-list">
+            <li>Selected as an Ambassador for Extern's Ambassador Program, representing 2k+ alumni from over 150+ countries worldwide.</li>
+            <li>Recruited college students from Australia to the United States for externship opportunities in technology and marketing.</li>
+          </ul>
+        </div>
+
+        <p class="resume-download-box">
+          <a href="files/resume.pdf" class="btn-download" target="_blank" rel="noopener">
+            <i class="fa fa-file"></i> DOWNLOAD THE FULL RESUME HERE
+          </a>
         </p>
       </div>
     </section>
 
-    <!-- CONTACT (STRUCTURE READY) -->
-    <section id="contact" class="section">
+    <!-- CONTACT SECTION -->
+    <section id="contact">
       <div class="container">
         <h2 class="section-title">CONTACT</h2>
-        <p class="section-subtitle">This page is a work in progress.</p>
+        <div class="contact-content">
+          <div class="polaroid-wrapper">
+            <img src="images/title-card.png" alt="Jenamari Bathan" class="polaroid-img">
+          </div>
 
-        <ul class="contact-list">
-          <li><strong>Email:</strong> <a href="mailto:jenamaribathan@gmail.com">jenamaribathan@gmail.com</a></li>
-          <li><strong>Phone:</strong> <a href="tel:+61427575787">+61 427 575 787</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/jena-mari" target="_blank" rel="noopener">github.com/jena-mari</a></li>
-          <li><strong>Portfolio Repo:</strong> <a href="https://github.com/jena-mari/jena-portfolio" target="_blank" rel="noopener"><u>View Repository</u></a></li>
-        </ul>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:jenamaribathan@gmail.com">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                jenamaribathan@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+61427575787">
+                <span class="icon"><i class="fas fa-phone"></i></span>
+                +61 427 575 787
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/jena-mari" target="_blank" rel="noopener">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                github.com/jena-mari
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jenabathan/" target="_blank" rel="noopener">
+                <span class="icon"><i class="fab fa-linkedin"></i></span>
+                linkedin.com/in/jenabathan
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
+  </main>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container">
-        <p>© <span id="year"></span> Jenamari Bathan</p>
-      </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="site-footer section--dark">
+    <div class="container">
+      <p>© <span id="year"></span> Jenamari Bathan</p>
+    </div>
+  </footer>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </body>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
