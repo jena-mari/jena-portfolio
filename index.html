@@ -3,37 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jenamari Bathan's Portfolio ૮๑ˊ ꒳ ˋ๑ა</title>
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="jena-stylesheet.css" /> 
+  <title>Jenamari Bathan — Portfolio</title>
+  <link rel="stylesheet" href="jena-stylesheet.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Dancing+Script:wght@400;700&family=DM+Serif+Display&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-  <link rel="icon" href="images/megaphone.png" type="image/website-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="icon" href="images/megaphone.png" type="image/png">
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ALERT MESSAGE -->
-  <div class="alert info-alert">
-    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-    <div class="alert-content">
-      <strong>Info:</strong> This portfolio is a work in progress. More of my work will be uploaded soon!  
-      For more details about my work, feel free to reach out via the <a href="#contact">Contact</a> section.
-    </div>
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement-bar" id="announcementBar">
+    <span>✦ This portfolio is a work in progress — more coming soon!</span>
+    <button class="announcement-close" onclick="document.getElementById('announcementBar').style.display='none'" aria-label="Close">×</button>
   </div>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <header id="home" class="hero">
-    <!-- NAVBAR -->
     <nav class="navbar" aria-label="Primary">
       <div class="navbar-inner">
         <a class="logo" href="#home" aria-label="Home">JB</a>
@@ -46,422 +33,448 @@
       </div>
     </nav>
 
-    <!-- HERO CONTENT -->
-    <div class="container">
-      <div class="intro" role="banner">
-        <div class="hello-bubble" aria-hidden="true">hi, i am</div>
-        <h1 class="display">
-          <span>JENAMARI</span><br />
-          <span>BATHAN ✷</span>
-        </h1>
-        <p class="lede">
-          and i'm a third-year software engineering student at the University of Wollongong,
-          enrolled in the Dean's Scholar Program, who thrives for creativity and artistry
-          in the field of technology — with a high distinction average (WAM: 85.8).
-        </p>
+    <div class="hero-content container">
+      <div class="hero-tag">Software Engineering · UOW Dean's Scholar</div>
+      <h1 class="display">
+        Jenamari<br/>Bathan<span class="display-dot">✷</span>
+      </h1>
+      <p class="lede">
+        Third-year software engineering student at the University of Wollongong with a high distinction average (WAM 85.8). I bridge technical precision with design sensibility — building things that work beautifully.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View my work</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
       </div>
     </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">scroll ↓</div>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main id="main">
 
-    <!-- SKILLS SECTION -->
+    <!-- SKILLS -->
     <section id="skills" class="section skills-section">
-      <div class="container grid-2">
-        <div class="skills-left">
-          <h2 class="section-title">
-            SKILLS
-            <img src="images/megaphone.png" alt="Megaphone icon" class="icon-img" />
-          </h2>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-sub">Technologies and tools I work with</p>
+        </div>
 
-          <div class="skill-category">
-            <h3>Programming Languages</h3>
-            <div class="skill-pills">
-              <span>Python</span>
-              <span>Java</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>C#</span>
-              <span>C++</span>
-              <span>SQL</span>
+        <div class="skills-grid">
+          <div class="skill-block">
+            <h3 class="skill-block-label">Languages</h3>
+            <div class="pill-group">
+              <span class="pill">Python</span>
+              <span class="pill">Java</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">C#</span>
+              <span class="pill">C++</span>
+              <span class="pill">SQL</span>
             </div>
           </div>
 
-          <div class="skill-category">
-            <h3>Frameworks &amp; Libraries</h3>
-            <div class="skill-pills">
-              <span>React</span>
-              <span>Spring Boot</span>
-              <span>JavaFX</span>
-              <span>LangChain4j</span>
-              <span>REST API</span>
+          <div class="skill-block">
+            <h3 class="skill-block-label">Frameworks &amp; Libraries</h3>
+            <div class="pill-group">
+              <span class="pill">React</span>
+              <span class="pill">Spring Boot</span>
+              <span class="pill">JavaFX</span>
+              <span class="pill">LangChain4j</span>
+              <span class="pill">REST API</span>
+              <span class="pill">Tailwind CSS</span>
             </div>
           </div>
 
-          <div class="skill-category">
-            <h3>Web Development</h3>
-            <div class="skill-pills">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Tailwind CSS</span>
-              <span>Responsive Design</span>
-              <span>UI Integration</span>
+          <div class="skill-block">
+            <h3 class="skill-block-label">Web Development</h3>
+            <div class="pill-group">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">Responsive Design</span>
+              <span class="pill">UI Integration</span>
+              <span class="pill">Vite</span>
             </div>
           </div>
 
-          <div class="skill-category">
-            <h3>UI/UX &amp; Design</h3>
-            <div class="skill-pills">
-              <span>Figma</span>
-              <span>Procreate</span>
-              <span>Canva</span>
-              <span>Readymag</span>
-              <span>Wix</span>
+          <div class="skill-block">
+            <h3 class="skill-block-label">Data &amp; AI</h3>
+            <div class="pill-group">
+              <span class="pill">RapidMiner</span>
+              <span class="pill">Python Analytics</span>
+              <span class="pill">Machine Learning</span>
+              <span class="pill">Data Visualisation</span>
+              <span class="pill">Google Gemini AI</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <h3 class="skill-block-label">Dev Tools</h3>
+            <div class="pill-group">
+              <span class="pill">Git &amp; GitHub</span>
+              <span class="pill">Docker</span>
+              <span class="pill">VS Code</span>
+              <span class="pill">MySQL</span>
+              <span class="pill">Google Colab</span>
+              <span class="pill">Replit</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <h3 class="skill-block-label">Design &amp; UI/UX</h3>
+            <div class="pill-group">
+              <span class="pill">Figma</span>
+              <span class="pill">Procreate</span>
+              <span class="pill">Canva</span>
+              <span class="pill">Readymag</span>
+              <span class="pill">Wix</span>
             </div>
           </div>
         </div>
 
-        <div class="skills-right">
-          <img src="images/clip.png" alt="Paperclip icon" class="clip-img" /> 
-          <article class="skills-card" aria-labelledby="dev-tools">
-
-            <h3 id="dev-tools" class="card-heading">DEVELOPER TOOLS</h3>
-            <p>
-              Git &amp; GitHub, Docker, Visual Studio Code, MySQL, Google Colab, 
-              ProjectLibre, UMLet, Replit, Microsoft Excel, RapidMiner
-            </p>
-
-            <h3 class="card-heading">DATA &amp; AI</h3>
-            <p>
-              RapidMiner, Python Data Analysis, Machine Learning (Clustering &amp; Pattern Analysis),
-              Data Visualisation, AI Integration (Google Gemini, Apache Kafka)
-            </p>
-
-            <h3 class="card-heading">SOFTWARE ENGINEERING</h3>
-            <p>
-              Object-Oriented Programming, Data Structures &amp; Algorithms, 
-              API Integration, Debugging &amp; Testing, Agile Collaboration, Version Control
-            </p>
-
-            <h3 class="card-heading">LANGUAGES</h3>
-            <p>English (Fluent) · Filipino/Tagalog (Fluent) · Kapampangan</p>
-
-          </article>
+        <div class="skills-aside">
+          <div class="aside-card">
+            <span class="aside-label">Spoken Languages</span>
+            <p>English · Filipino/Tagalog · Kapampangan</p>
+          </div>
+          <div class="aside-card">
+            <span class="aside-label">Soft Skills</span>
+            <p>Leadership · Agile Collaboration · Project Management · Communication</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
+    <!-- PROJECTS -->
     <section id="projects" class="section projects-section">
       <div class="container">
-        <h2 class="projects-title">
-          Projects<br>and Works
-        </h2>
+        <div class="section-header section-header--light">
+          <h2 class="section-title">Projects &amp; Works</h2>
+          <p class="section-sub">A selection of things I've built</p>
+        </div>
 
-        <!-- Project Card: Synapta Website -->
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/synapta.png" alt="Synapta Website" />
-          </div>
-          <div class="project-content">
-            <h3>SYNAPTA WEBSITE</h3>
-            <p>✮ Software Development Intern — designed and built the company's production website from scratch.</p>
-            <p>✮ Made with React, TypeScript, JavaScript, Vite, and Docker.</p>
-            <p>✮ Tags: Frontend Development, React, TypeScript, UI/UX Design, Branding, Docker, Internship</p>
-            <div class="project-links">
-              <a href="https://synapta-ai-web.web.app/" target="_blank" rel="noopener" aria-label="Open live Synapta website">
-                <i class="fa-solid fa-globe" aria-hidden="true"></i><span class="sr-only">Live</span>
-              </a>
+        <div class="projects-list">
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-type">Internship · 2026</span>
+              <h3 class="project-name">Synapta Website</h3>
+              <p class="project-desc">Designed and built the company's production website from scratch as a Software Development Intern. Led frontend development, established branding and style guide, and delivered a production-ready responsive web application.</p>
+              <div class="project-tags">
+                <span>React</span><span>TypeScript</span><span>Vite</span><span>Docker</span><span>Branding</span>
+              </div>
+              <div class="project-links">
+                <a href="https://synapta-ai-web.web.app/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Live site</a>
+              </div>
             </div>
-          </div>
-        </article>
-
-        <!-- Project Card: Click&Cart -->
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/clickcart.png" alt="Click and Cart App" />
-          </div>
-          <div class="project-content">
-            <h3>CLICK&amp;CART: AI-POWERED RETAIL MICROSERVICE APP</h3>
-            <p>✮ Systems analyst for a prototype online retail platform powered by microservices and agentic AI (Google Gemini).</p>
-            <p>✮ Made with Java 21, Spring Boot, Apache Kafka, H2, Docker Compose, and Maven.</p>
-            <p>✮ Tags: Microservices, AI Integration, Java, Spring Boot, Docker, Systems Analysis</p>
-            <div class="project-links">
-              <a href="https://github.com/gyl099/Click-Cart-AI-Powered-Online-Retail-Microservice-Application" target="_blank" rel="noopener" aria-label="View source code for Click and Cart">
-                <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">Code</span>
-              </a>
-              <a href="https://docs.google.com/document/d/1iZtYhYa3kvgkgp4eZ4vQPwE5QtG1eZk0PSMxtO5jj4/edit?usp=sharing" target="_blank" rel="noopener" aria-label="View document for Click and Cart">
-                <i class="fa-solid fa-file-word" aria-hidden="true"></i><span class="sr-only">Document</span>
-              </a>
+            <div class="project-image">
+              <img src="images/synapta.png" alt="Synapta Website" loading="lazy" />
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Project Card: File System -->
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/filesystem.png" alt="File System with Authentication" />
-          </div>
-          <div class="project-content">
-            <h3>FILE SYSTEM WITH AUTHENTICATION &amp; ACCESS CONTROL</h3>
-            <p>✮ A simple file system with login, authentication, and access control written in Python 3 using MD5, hash/salt/shadow-based user creation.</p>
-            <p>✮ Made with Python 3.</p>
-            <p>✮ Tags: Python, Cybersecurity, Authentication, Systems Programming</p>
-            <div class="project-links">
-              <a href="https://github.com/jena-mari/csci262-a1" target="_blank" rel="noopener" aria-label="View source code for File System">
-                <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">Code</span>
-              </a>
+          <article class="project-card project-card--flip">
+            <div class="project-meta">
+              <span class="project-type">University Project · Java</span>
+              <h3 class="project-name">Click&amp;Cart: AI-Powered Retail Microservice App</h3>
+              <p class="project-desc">Systems analyst for a prototype online retail platform powered by microservices and agentic AI. Responsible for organising, debugging, and connecting code across three systems built by a team of four.</p>
+              <div class="project-tags">
+                <span>Java 21</span><span>Spring Boot</span><span>Apache Kafka</span><span>Docker</span><span>Google Gemini</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/gyl099/Click-Cart-AI-Powered-Online-Retail-Microservice-Application" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                <a href="https://docs.google.com/document/d/1iZtYhYa3kvgkgp4eZ4vQPwE5QtG1eZk0PSMxtO5jj4/edit?usp=sharing" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Docs</a>
+              </div>
             </div>
-          </div>
-        </article>
-
-        <!-- Project Card: Cafe Pomodoro -->
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/cafe-pomodoro.png" alt="Cafe Pomodoro App" />
-          </div>
-          <div class="project-content">
-            <h3>CAFE POMODORO</h3>
-            <p>✮ A customisable Pomodoro timer paired with a built-in to-do list with a cozy, café-inspired atmosphere.</p>
-            <p>✮ Made with HTML, CSS, JavaScript. Deployed on Vercel.</p>
-            <p>✮ Tags: Web Development, UI/UX Design, JavaScript Programming, Personal Project</p>
-            <div class="project-links">
-              <a href="https://github.com/jena-mari/cafe-pomodoro" target="_blank" rel="noopener" aria-label="View source code for Cafe Pomodoro">
-                <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">Code</span>
-              </a>
-              <a href="https://cafe-pomodoro.vercel.app/" target="_blank" rel="noopener" aria-label="Open live demo of Cafe Pomodoro">
-                <i class="fa-solid fa-globe" aria-hidden="true"></i><span class="sr-only">Live</span>
-              </a>
+            <div class="project-image">
+              <img src="images/clickcart.png" alt="Click and Cart" loading="lazy" />
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Project Card: FlyDreamAir -->
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/flydreamair.png" alt="FlyDreamAir" />
-          </div>
-          <div class="project-content">
-            <h3>FLYDREAMAIR WEBSITE PROTOTYPE</h3>
-            <p>✮ Front-end developer and debugger of a functioning airline website prototype — flight booking, seat selection, and ancillary services.</p>
-            <p>✮ Made with HTML5, CSS3, JavaScript (ES6+), Tailwind CSS. UI/UX designed in Figma.</p>
-            <p>✮ Tags: Web Development, UI/UX Design, Figma, Tailwind CSS, Code Collaboration</p>
-            <div class="project-links">
-              <a href="https://github.com/elijaharc/fly-dream-air" target="_blank" rel="noopener" aria-label="View source code for FlyDreamAir">
-                <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">Code</span>
-              </a>
-              <a href="https://fly-dream-air-omega.vercel.app/" target="_blank" rel="noopener" aria-label="Open live demo of FlyDreamAir">
-                <i class="fa-solid fa-globe" aria-hidden="true"></i><span class="sr-only">Live</span>
-              </a>
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-type">Personal Project · Web</span>
+              <h3 class="project-name">Café Pomodoro</h3>
+              <p class="project-desc">A customisable Pomodoro timer paired with a built-in to-do list — crafted with a cozy, café-inspired atmosphere. UI visuals designed in Canva, deployed on Vercel.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>LocalStorage</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/jena-mari/cafe-pomodoro" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                <a href="https://cafe-pomodoro.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Live</a>
+              </div>
             </div>
-          </div>
-        </article>
-
-        <!-- Project Card: ScrapChef -->
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/scrapchef.png" alt="ScrapChef" />
-          </div>
-          <div class="project-content">
-            <h3>SCRAPCHEF APP</h3>
-            <p>✮ UI/UX Designer of ScrapChef — a prototype waste analysis application showcasing human-computer interaction design principles.</p>
-            <p>✮ Made using Figma. Team of five.</p>
-            <p>✮ Tags: HCI, UI/UX Design, Figma, Prototyping</p>
-            <div class="project-links">
-              <a href="https://docs.google.com/document/d/1s0CdVIa8nAQxFsARH7EdkjhLQZGa8w74gEkZZFI3HJA/edit?usp=sharing" target="_blank" rel="noopener" aria-label="View document for ScrapChef">
-                <i class="fa-solid fa-file-word" aria-hidden="true"></i><span class="sr-only">Document</span>
-              </a>
-              <a href="https://www.figma.com/proto/ZBZBahuY7Fp2z3CPmczLOg/ScrapChef-Hi-Fidelity?page-id=0%3A1&node-id=1-2&p=f&viewport=420%2C116%2C0.08&t=Al4FLD385Za60tAw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2" target="_blank" rel="noopener" aria-label="Figma Prototype for ScrapChef">
-                <i class="fa-brands fa-figma" aria-hidden="true"></i><span class="sr-only">Figma</span>
-              </a>
-              <a href="https://www.youtube.com/watch?v=64kdB31-huY" target="_blank" rel="noopener" aria-label="Video for ScrapChef">
-                <i class="fa-brands fa-youtube" aria-hidden="true"></i><span class="sr-only">Video</span>
-              </a>
+            <div class="project-image">
+              <img src="images/cafe-pomodoro.png" alt="Cafe Pomodoro" loading="lazy" />
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Project Card: RapidMiner -->
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/rapidminer.png" alt="RapidMiner Analysis" />
-          </div>
-          <div class="project-content">
-            <h3>SALES, PROFIT &amp; DISCOUNT ANALYSIS MODEL</h3>
-            <p>✮ Built a Decision Tree Model in RapidMiner to analyse sales, profit, and discount trends for strategic planning in a retail organisation.</p>
-            <p>✮ Made using RapidMiner and Microsoft Excel.</p>
-            <p>✮ Tags: Machine Learning, Predictive Analytics, RapidMiner, Knowledge Engineering, Data Analysis</p>
-            <div class="project-links">
-              <a href="https://docs.google.com/document/d/1xMOsS9yl2q9qj-TjyMElchtwOrHyNdoW4XV4CQxeqxw/edit?tab=t.0#heading=h.59p2qab3bm3u" target="_blank" rel="noopener" aria-label="View document for RapidMiner">
-                <i class="fa-solid fa-file-word" aria-hidden="true"></i><span class="sr-only">Document</span>
-              </a>
+          <article class="project-card project-card--flip">
+            <div class="project-meta">
+              <span class="project-type">University Project · Security</span>
+              <h3 class="project-name">File System with Authentication &amp; Access Control</h3>
+              <p class="project-desc">A file system with login, user authentication, and access control written in Python 3. Implements MD5 hash/salt/shadow-based user and password creation.</p>
+              <div class="project-tags">
+                <span>Python 3</span><span>MD5</span><span>Auth</span><span>Cybersecurity</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/jena-mari/csci262-a1" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+              </div>
             </div>
-          </div>
-        </article>
-
-        <!-- Project Card: Data Analytics Externship -->
-        <article class="project-card">
-          <div class="project-image">
-            <img src="images/webacy.png" alt="Webacy Data Analytics Externship" />
-          </div>
-          <div class="project-content">
-            <h3>WEB3 SECURITY DATA ANALYTICS — WEBACY × EXTERN</h3>
-            <p>✮ Three analyses on smart contract vulnerabilities: advanced frequency analysis, correlation analysis (Phi &amp; Point-Biserial), and hierarchical clustering.</p>
-            <p>✮ Made using Python (pandas, matplotlib, seaborn), Excel, and Google Colab.</p>
-            <p>✮ Tags: Data Analytics, Python, Machine Learning, Web3 Security, Externship</p>
-            <div class="project-links">
-              <a href="https://github.com/jena-mari/data-analytics-externship" target="_blank" rel="noopener" aria-label="View source code for Data Analytics Externship">
-                <i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">Code</span>
-              </a>
+            <div class="project-image">
+              <img src="images/filesystem.png" alt="File System" loading="lazy" />
             </div>
-          </div>
-        </article>
+          </article>
 
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-type">University Project · Web</span>
+              <h3 class="project-name">FlyDreamAir Website Prototype</h3>
+              <p class="project-desc">Front-end developer and debugger for a functioning airline website prototype — supporting flight booking, seat selection, and ancillary in-flight services. Team of four.</p>
+              <div class="project-tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Tailwind CSS</span><span>Figma</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/elijaharc/fly-dream-air" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+                <a href="https://fly-dream-air-omega.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Live</a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img src="images/flydreamair.png" alt="FlyDreamAir" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="project-card project-card--flip">
+            <div class="project-meta">
+              <span class="project-type">University Project · UI/UX</span>
+              <h3 class="project-name">ScrapChef App</h3>
+              <p class="project-desc">UI/UX Designer for ScrapChef, a waste analysis application prototype. Designed all screens in Figma, applying HCI principles for a team of five.</p>
+              <div class="project-tags">
+                <span>Figma</span><span>HCI</span><span>Prototyping</span><span>UI/UX Design</span>
+              </div>
+              <div class="project-links">
+                <a href="https://docs.google.com/document/d/1s0CdVIa8nAQxFsARH7EdkjhLQZGa8w74gEkZZFI3HJA/edit?usp=sharing" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Docs</a>
+                <a href="https://www.figma.com/proto/ZBZBahuY7Fp2z3CPmczLOg/ScrapChef-Hi-Fidelity?page-id=0%3A1&node-id=1-2&p=f&viewport=420%2C116%2C0.08&t=Al4FLD385Za60tAw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2" target="_blank" rel="noopener"><i class="fa-brands fa-figma"></i> Figma</a>
+                <a href="https://www.youtube.com/watch?v=64kdB31-huY" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> Video</a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img src="images/scrapchef.png" alt="ScrapChef" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-type">University Project · Data</span>
+              <h3 class="project-name">Sales, Profit &amp; Discount Analysis Model</h3>
+              <p class="project-desc">Built a Decision Tree Model in RapidMiner to analyse sales, profit, and discount trends for a retail organisation — generating actionable insights for strategic planning.</p>
+              <div class="project-tags">
+                <span>RapidMiner</span><span>Excel</span><span>Machine Learning</span><span>Decision Tree</span>
+              </div>
+              <div class="project-links">
+                <a href="https://docs.google.com/document/d/1xMOsS9yl2q9qj-TjyMElchtwOrHyNdoW4XV4CQxeqxw/edit?tab=t.0" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> Report</a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img src="images/rapidminer.png" alt="RapidMiner Analysis" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="project-card project-card--flip">
+            <div class="project-meta">
+              <span class="project-type">Externship · Data Analytics</span>
+              <h3 class="project-name">Web3 Security Data Analytics — Webacy × Extern</h3>
+              <p class="project-desc">Three in-depth analyses on smart contract vulnerabilities: advanced frequency analysis, Phi &amp; Point-Biserial correlation analysis, and hierarchical clustering — using Python, Excel, and Google Colab.</p>
+              <div class="project-tags">
+                <span>Python</span><span>pandas</span><span>matplotlib</span><span>seaborn</span><span>Web3</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/jena-mari/data-analytics-externship" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img src="images/webacy.png" alt="Webacy Externship" loading="lazy" />
+            </div>
+          </article>
+
+        </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience-section">
       <div class="container">
-        <h2 class="section-title">EXPERIENCE</h2>
-
-        <!-- Synapta -->
-        <div class="experience-block">
-          <h3 class="title">Software Development Intern — Synapta</h3>
-          <span class="date">Internship ⊹ January 2026 – Present</span>
-          <ul class="duties-list">
-            <li>Designed and developed the company's website using React, TypeScript, JavaScript, Vite, and Docker, delivering a production-ready, responsive web application.</li>
-            <li>Led frontend development efforts, implementing dynamic UI components, animations, and intuitive user experiences aligned with modern design principles.</li>
-            <li>Established the website's branding and style guide, ensuring consistency across design, layout, and user interaction.</li>
-            <li>Translated wireframes and product requirements into functional, user-friendly interfaces.</li>
-            <li>Identified and resolved bugs, improving application stability, performance, and overall user experience.</li>
-            <li>Collaborated with interns and senior developers within an agile environment, contributing to code quality and development workflows.</li>
-          </ul>
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-sub">Where I've worked and what I've led</p>
         </div>
 
-        <!-- Webacy Extern -->
-        <div class="experience-block">
-          <h3 class="title">Web3 Security Data Analytics Extern — Extern × Webacy Inc.</h3>
-          <span class="date">Extern ⊹ June 2024 – July 2024</span>
-          <ul class="duties-list">
-            <li>Conducted detailed analysis and labelling of smart contract vulnerabilities, enhancing data categorisation and risk assessment skills.</li>
-            <li>Validated peers' data labels to ensure the accuracy and reliability of data sets.</li>
-            <li>Performed frequency and correlation analysis of risk tags to identify the most prevalent vulnerabilities and their associations.</li>
-            <li>Utilised unsupervised machine learning techniques for cluster analysis, discovering patterns and commonalities among smart contracts.</li>
-            <li>Demonstrated proficiency in Excel, Google Colab, and Python for complex data analysis and visualisation tasks.</li>
-          </ul>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <span class="timeline-date">Jan 2026 — Present</span>
+              <span class="timeline-badge timeline-badge--current">Current</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Software Development Intern</h3>
+              <span class="timeline-org">Synapta</span>
+              <ul>
+                <li>Designed and built the company website using React, TypeScript, Vite, and Docker — delivered production-ready.</li>
+                <li>Led frontend development, implementing dynamic components, animations, and intuitive UX aligned with modern design principles.</li>
+                <li>Established the website's branding and style guide, ensuring design and layout consistency.</li>
+                <li>Collaborated with interns and senior developers in an agile environment, contributing to code quality and workflows.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <span class="timeline-date">Sep 2024 — Jul 2025</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Mathematics Tutor</h3>
+              <span class="timeline-org">Custom Tutoring Institute &amp; EzyMath Tutoring</span>
+              <ul>
+                <li>Provided personalised maths tutoring to primary and high school students across Shellharbour and Unanderra.</li>
+                <li>Utilised online platforms, educational software, and hands-on activities — received positive feedback from parents and students consistently.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <span class="timeline-date">Jul 2024 — Jan 2025</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Student Ambassador</h3>
+              <span class="timeline-org">Extern</span>
+              <ul>
+                <li>Selected for Extern's Ambassador Program, representing 2K+ alumni from 150+ countries worldwide.</li>
+                <li>Recruited Australian students for externship opportunities in technology and marketing fields.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <span class="timeline-date">Jun 2024 — Jul 2024</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Web3 Security Data Analytics Extern</h3>
+              <span class="timeline-org">Extern × Webacy Inc.</span>
+              <ul>
+                <li>Conducted detailed analysis and labelling of smart contract vulnerabilities for risk assessment.</li>
+                <li>Performed frequency, correlation, and cluster analysis using Python, Excel, and Google Colab.</li>
+                <li>Applied unsupervised machine learning to discover patterns across smart contract datasets.</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
 
-        <!-- Student Ambassador -->
-        <div class="experience-block">
-          <h3 class="title">Student Ambassador — Extern</h3>
-          <span class="date">Ambassador ⊹ July 2024 – January 2025</span>
-          <ul class="duties-list">
-            <li>Selected as an Ambassador for Extern's Ambassador Program, representing 2K+ alumni from over 150+ countries worldwide.</li>
-            <li>Recruited college students from Australia to the United States for externship opportunities in technology and marketing.</li>
-          </ul>
+        <!-- Leadership -->
+        <div class="subsection-header">
+          <h3 class="subsection-title">Leadership</h3>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <span class="timeline-date">2024 — Present</span>
+              <span class="timeline-badge timeline-badge--current">Current</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Co-Founder &amp; President</h3>
+              <span class="timeline-org">Filipino Organisation of UOW</span>
+              <ul>
+                <li>President (Oct 2025 – Present): leads club operations, strategic initiatives, and external engagements.</li>
+                <li>Secretary (Oct 2024 – Oct 2025): managed admin, membership records, and UniClubs compliance.</li>
+                <li>Socio-Cultural Head (Mar 2024 – Oct 2024): led cultural initiatives and managed social media platforms.</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <!-- EzyMath -->
-        <div class="experience-block">
-          <h3 class="title">Mathematics Tutor — EzyMath Tutoring</h3>
-          <span class="date">Tutor ⊹ April 2024 – July 2025</span>
-          <ul class="duties-list">
-            <li>Provided personalised math tutoring to students from Shellharbour ranging from primary to high school levels.</li>
-            <li>Utilised online platforms, educational software, and hands-on activities that enhance learning experiences.</li>
-            <li>Helped improve students' performance skills in mathematics with positive feedback from both parents and students.</li>
-          </ul>
+        <!-- Awards -->
+        <div class="subsection-header">
+          <h3 class="subsection-title">Awards &amp; Recognition</h3>
         </div>
-
-        <!-- Custom Tutoring -->
-        <div class="experience-block">
-          <h3 class="title">Mathematics Tutor — Custom Tutoring Institute</h3>
-          <span class="date">Tutor ⊹ September 2024 – July 2025</span>
-          <ul class="duties-list">
-            <li>Provided personalised math tutoring to students from Unanderra ranging from primary to high school levels.</li>
-            <li>Remained updated on the latest educational trends and curriculum changes to ensure effective tutoring practices.</li>
-          </ul>
-        </div>
-
-        <!-- LEADERSHIP -->
-        <h2 class="section-title" style="margin-top: 3rem;">LEADERSHIP</h2>
-
-        <div class="experience-block">
-          <h3 class="title">Filipino Organisation of UOW — Co-Founder &amp; President</h3>
-          <span class="date">University of Wollongong ⊹ 2024 – Present</span>
-          <ul class="duties-list">
-            <li>Co-founded the organisation; currently serving as President (Oct 2025 – Present), leading club operations and strategic initiatives.</li>
-            <li>Previously served as Secretary (Oct 2024 – Oct 2025), managing administrative operations, membership records, and compliance with university governance.</li>
-            <li>Served as Socio-Cultural Head (Mar 2024 – Oct 2024), leading cultural initiatives and managing social media platforms.</li>
-            <li>Represents the organisation at university events and strengthens partnerships within the UOW community.</li>
-          </ul>
-        </div>
-
-        <!-- AWARDS -->
-        <h2 class="section-title" style="margin-top: 3rem;">AWARDS</h2>
-
-        <div class="experience-block">
-          <h3 class="title">Dean's Merit List Award</h3>
-          <span class="date">University of Wollongong ⊹ October 2025</span>
-          <ul class="duties-list">
-            <li>Recognised as a top-performing undergraduate, ranking in the top 5% of students in the School of Computing and Information Technology based on 2025 academic results.</li>
-            <li>Also enrolled in the Dean's Scholar Program, maintaining a current WAM of 85.8/100 with High Distinction standing.</li>
-          </ul>
+        <div class="awards-grid">
+          <div class="award-card">
+            <div class="award-icon">✦</div>
+            <div>
+              <h4>Dean's Merit List Award</h4>
+              <p>University of Wollongong · October 2025</p>
+              <p>Top 5% of students in the School of Computing and Information Technology based on 2025 academic results.</p>
+            </div>
+          </div>
+          <div class="award-card">
+            <div class="award-icon">✦</div>
+            <div>
+              <h4>Dean's Scholar Program</h4>
+              <p>University of Wollongong · 2024 – Present</p>
+              <p>Current WAM: 85.8/100 — High Distinction standing across all semesters.</p>
+            </div>
+          </div>
         </div>
 
         <p class="resume-download-box">
           <a href="files/resume.pdf" class="btn-download" target="_blank" rel="noopener">
-            <i class="fa fa-file"></i> DOWNLOAD THE FULL RESUME HERE
+            <i class="fa fa-file"></i> Download full resume
           </a>
         </p>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
       <div class="container">
-        <h2 class="section-title">CONTACT</h2>
-        <div class="contact-content">
-          <div class="polaroid-wrapper">
-            <img src="images/title-card.png" alt="Jenamari Bathan" class="polaroid-img">
+        <div class="contact-inner">
+          <div class="contact-left">
+            <h2 class="contact-title">Let's work<br/><em>together.</em></h2>
+            <p class="contact-sub">Open to internships, collaborations, and exciting projects. Feel free to reach out!</p>
           </div>
-
-          <ul class="contact-list">
-            <li>
-              <a href="mailto:jenamaribathan@gmail.com">
-                <span class="icon"><i class="fas fa-envelope"></i></span>
-                jenamaribathan@gmail.com
-              </a>
-            </li>
-            <li>
-              <a href="tel:+61427575787">
-                <span class="icon"><i class="fas fa-phone"></i></span>
-                +61 427 575 787
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/jena-mari" target="_blank" rel="noopener">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                github.com/jena-mari
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/jenabathan/" target="_blank" rel="noopener">
-                <span class="icon"><i class="fab fa-linkedin"></i></span>
-                linkedin.com/in/jenabathan
-              </a>
-            </li>
-          </ul>
+          <div class="contact-right">
+            <ul class="contact-list">
+              <li>
+                <a href="mailto:jenamaribathan@gmail.com">
+                  <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                  <span>jenamaribathan@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+61427575787">
+                  <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                  <span>+61 427 575 787</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/jena-mari" target="_blank" rel="noopener">
+                  <span class="contact-icon"><i class="fab fa-github"></i></span>
+                  <span>github.com/jena-mari</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jenabathan/" target="_blank" rel="noopener">
+                  <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+                  <span>linkedin.com/in/jenabathan</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer section--dark">
-    <div class="container">
-      <p>© <span id="year"></span> Jenamari Bathan</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">JB</span>
+      <p>© <span id="year"></span> Jenamari Bathan — Built with HTML & Tailwind CSS &amp; care.</p>
+      <div class="footer-links">
+        <a href="https://github.com/jena-mari" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jenabathan/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
   </footer>
 
