@@ -405,24 +405,15 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 
   /* PRELOADER LOGIC */
-  window.addEventListener('load', () => {
-    const loader = document.getElementById('preloader');
+  window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    
+    // Tiny Delay
     setTimeout(() => {
-      loader.classList.add('hidden');
-    }, 500); // small delay for smoothness
+      preloader.classList.add('hidden');
+      
+    }, 1000); 
   });
-
-  /* Scroll-reveal via IntersectionObserver */
-  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  revealEls.forEach(el => io.observe(el));
   </script>
 </body>
 </html>
