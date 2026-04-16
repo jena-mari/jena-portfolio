@@ -405,14 +405,21 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 
   /* PRELOADER LOGIC */
-  window.addEventListener('load', function() {
+  document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.getElementById('preloader');
     
-    // Tiny Delay
-    setTimeout(() => {
+    // Check if the page is already loaded (for cached visits)
+    if (document.readyState === 'complete') {
+      hidePreloader();
+    } else {
+      // Hide it after a fixed 800ms to feel responsive, 
+      // regardless of image status.
+      setTimeout(hidePreloader, 800);
+    }
+
+    function hidePreloader() {
       preloader.classList.add('hidden');
-      
-    }, 1000); 
+    }
   });
   </script>
 </body>
